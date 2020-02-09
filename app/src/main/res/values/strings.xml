@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DashboardSM2019</string>
+
+    <string name="def_value">0</string>
+    <string name="kmh">km/h</string>
+    <string name="amp">Amp</string>
+</resources>

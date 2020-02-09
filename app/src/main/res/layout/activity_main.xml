@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/i_mode"
+            android:layout_centerInParent="true"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:src="@drawable/ic_mode_standard"/>
+
+        <ImageView
+            android:id="@+id/i_light"
+            android:layout_below="@id/i_mode"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/ic_light_close"
+            android:alpha="0"/>
+
+        <ImageView
+            android:id="@+id/i_tl_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_turn_light_left"
+            android:alpha="0"/>
+
+        <ImageView
+            android:id="@+id/i_tl_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_turn_light_rigth"
+            android:alpha="0"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/t_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/def_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="150sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t_speed"
+                android:layout_centerHorizontal="true"
+                android:text="@string/kmh"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="30sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/t_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/def_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="150sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t_current"
+                android:layout_centerHorizontal="true"
+                android:text="@string/amp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
