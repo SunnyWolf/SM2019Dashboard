@@ -12,9 +12,9 @@
         <ImageView
             android:id="@+id/i_mode"
             android:layout_centerInParent="true"
-            android:layout_width="200sp"
-            android:layout_height="200sp"
-            android:src="@drawable/ic_mode_standard"/>
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/ic_mode_track"/>
 
         <ImageView
             android:id="@+id/i_light"
@@ -40,6 +40,13 @@
             android:scaleType="fitEnd"
             android:src="@drawable/ic_turn_light_rigth"
             android:alpha="0"/>
+        <Button
+            android:id="@+id/b_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:layout_below="@id/i_light"
+            android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -58,7 +65,17 @@
                 android:layout_centerInParent="true"
                 android:text="@string/def_value"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="150sp" />
+                android:textSize="100sp" />
+
+            <TextView
+                android:id="@+id/t_speed_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/t_speed"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +97,7 @@
                 android:layout_centerInParent="true"
                 android:text="@string/def_value"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="150sp" />
+                android:textSize="100sp" />
 
             <TextView
                 android:layout_width="wrap_content"
